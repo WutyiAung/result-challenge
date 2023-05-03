@@ -112,4 +112,8 @@ button{
     .container .card{
         border-radius: 30px;
     }
+ footer {
+   position: fixed;
+   bottom: 1em;
 }
+ 
