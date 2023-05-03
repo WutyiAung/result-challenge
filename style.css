@@ -1,0 +1,115 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;700&family=Hanken+Grotesk:wght@500;700;800&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@500&family=Outfit:wght@200&family=Red+Hat+Display:ital,wght@0,700;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk";
+}
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 0;
+}
+.container{
+    display: flex;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container p{
+    font-size: 1rem;
+}
+.container .card,.container .card-summary{
+    width: 50%;
+    padding: 1rem;
+}
+.container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+}
+.container .card p,.container .card h4{
+   color:hsl(241, 100%, 89%)
+}
+ 
+.container .card h4{
+    padding-bottom: 4vh;
+    
+}
+.container .card .box{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   width:100px;
+   height: 100px;
+   border-radius: 50%;
+   background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   align-items: center;
+   justify-content: center;
+}
+.container .card .box h1{
+    color:hsl(0, 0%, 100%);
+    font-weight: 800;
+}
+.container .card .box p{
+  font-size: .6rem;
+}
+.container .card h3{
+    color: hsl(0, 0%, 100%); 
+    padding-bottom: 1rem;
+}
+.description{
+    width: 100%;
+}
+.description p{
+    font-size: .8rem;
+    text-align: center;
+}
+
+.container .card-summary{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container .card-summary h4{
+    padding-bottom: 2vh;
+    color:  hsl(224, 30%, 27%);
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 0 ;
+}
+
+button{
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.5rem 0;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    color: hsl(0, 0%, 100%); 
+}
+@media screen and (max-width:530px) {
+    main{
+        padding: 0;
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+        place-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .container .card,.container .card-summary{
+        width: 100%;
+        padding: 1rem;
+    }
+    .container .card{
+        border-radius: 30px;
+    }
+}
